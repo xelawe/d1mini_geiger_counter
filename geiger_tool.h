@@ -3,6 +3,7 @@
 
 volatile unsigned long counts = 0;                       // Tube events
 unsigned long cpm = 0;                                   // CPM
+float usvh = 0;
 unsigned long previousMillis;                            // Time measurement
 const int inputPin = D5;
 boolean gv_meas_ok = false;
@@ -37,6 +38,7 @@ void do_meas() {
     cpm = 0;
     for (int i = 0; i < MAX_COUNTS; i++) {
       cpm += secondcounts[i];
+      usvh = cpm / 151;
     }
     gv_meas_ok = true;
   }

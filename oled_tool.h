@@ -24,8 +24,13 @@ void disp_data() {
   oled.setFontType(0); // set font type 0, please see declaration in SFE_MicroOLED.cpp
   oled.setCursor(0, 0); // points cursor to x=0 y=0
   oled.println("Radioactivity");
+  
   oled.print(cpm);
   oled.println(" cpm");
+
+  oled.print(usvh);
+  oled.println(" µSv/h");
+  
   oled.display();
 
 }
