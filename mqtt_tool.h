@@ -25,4 +25,3 @@ void mqtt_data() {
   client.publish(mqtt_pubtopic_cpm, buffer, true);
 
 }
-

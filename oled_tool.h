@@ -16,41 +16,21 @@ void init_oled() {
   oled.setCursor(0, 0); // points cursor to x=0 y=0
 }
 
-
-
 void disp_data() {
 
   oled.clear(PAGE);  // Clear the buffer
   oled.setFontType(0); // set font type 0, please see declaration in SFE_MicroOLED.cpp
   oled.setCursor(0, 0); // points cursor to x=0 y=0
-  oled.println("Radioactivity");
-  
+  oled.println("Radioact.:");
+
   oled.print(cpm);
   oled.println(" cpm");
 
-  oled.print(usvh);
-  oled.println(" uSv/h");
-  
-    oled.printf("%3.4f", usvh);
-  oled.println(" uSv/h");
-  
+  //oled.print(usvh);
+  //oled.println(" uSv/h");
+  oled.printf("%3.2f uSv/h", usvh);
+  oled.println("");
+
   oled.display();
 
 }
-
-//void displayInt(int dispInt, int x, int y) {
-//  display.setColor(WHITE);
-//  display.setTextAlignment(TEXT_ALIGN_CENTER);
-//  display.drawString(x, y, String(dispInt));
-//  display.setFont(ArialMT_Plain_24);
-//  display.display();
-//}
-
-//void displayString(String dispString, int x, int y) {
-//  display.setColor(WHITE);
-//  display.setTextAlignment(TEXT_ALIGN_CENTER);
-//  display.drawString(x, y, dispString);
-//  display.setFont(ArialMT_Plain_24);
-//  display.display();
-//}
-
