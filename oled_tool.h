@@ -29,7 +29,10 @@ void disp_data() {
   oled.println(" cpm");
 
   oled.print(usvh);
-  oled.println(" µSv/h");
+  oled.println(" uSv/h");
+  
+    oled.printf("%3.4f", usvh);
+  oled.println(" uSv/h");
   
   oled.display();
 
