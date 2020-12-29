@@ -17,7 +17,7 @@ static unsigned long int secidx = 0;
 
 Ticker meas_tick;
 
-void ISR_impulse() { // Captures count of events from Geiger counter board
+void ICACHE_RAM_ATTR ISR_impulse() { // Captures count of events from Geiger counter board
   counts++;
 }
 

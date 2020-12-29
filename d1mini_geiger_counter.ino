@@ -71,7 +71,8 @@ void loop() {
     gv_meas_ok = false;
   }
 
-  check_mqtt();
+  //check_mqtt();
+  check_mqtt_reset();
 
   delay(50);
 }

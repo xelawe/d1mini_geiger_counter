@@ -1,4 +1,4 @@
-#include "cy_mqtt.h"
+#include "cy_mqtt_v1.h"
 
 const char* mqtt_pubtopic_cpm_suff = "cpm/value";
 
