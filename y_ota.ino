@@ -1,5 +1,3 @@
-int gv_ota_perc = 0;
-
 void init_ota_local() {
 
   init_ota(gv_clientname);
